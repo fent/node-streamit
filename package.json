@@ -1,0 +1,35 @@
+{
+  "name": "streamit",
+  "description": "Stream files from and to a friend.",
+  "keywords": [
+    "stream",
+    "file",
+    "io",
+    "input",
+    "output"
+  ],
+  "version": "0.1.0-2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fent/streamit.git"
+  },
+  "author": "fent (https://github.com/fent)",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./lib/index.js"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/fent/streamit/raw/master/LICENSE"
+    }
+  ],
+  "private": "true",
+  "subdomain": "streamit",
+  "engines": {
+    "node": "0.6.x"
+  }
+}
