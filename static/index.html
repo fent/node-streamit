@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>streamit :)</title>
+  <style type="text/css">
+    body {
+      font: 135% helvetica;
+      min-width: 800px;
+      width: 60%;
+      margin: auto;
+    }
+
+    h1 {
+      text-shadow: 1px 1px 3px black;
+    }
+
+    section {
+      border: 3px dotted #eee;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    pre {
+      padding: 5px 2px;
+      background: black;
+      color: #aaa;
+    }
+
+    div {
+      margin-bottom: 1em;
+    }
+
+    .cool {
+      text-shadow: 1px 1px 2px navy;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://github.com/fent/node-streamit"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <h1>streamit :)</h1>
+  <section>
+    <div>to <span class="cool">upstream</span> a file</div>
+    <pre>curl --upload-file myfile.gz streamit.jit.su/chooseApath</pre>
+    <div>to <span class="cool">downstream</span> a file</div>
+    <pre>curl streamit.jit.su/chooseApath &gt; myfile.gz</pre>
+    <div>files are never stored on the server. instead, when you upload a file, it pauses the transfer until someone requests to download it.</div>
+    <div>once someone connects on the other end, it begins <span class="cool">streaming</span> the file.</div>
+    <div>if you try to download from a path where someone is not uploading, it will wait until someone starts uploading to that specific path.</div>
+  </section>
+</body>
+</html>
